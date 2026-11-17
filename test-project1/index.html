@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Crestwood College and check your admission eligibility."
+    />
+    <title>Crestwood College | Your future starts here</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Main navigation and Courses dropdown -->
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Main navigation">
+        <a class="brand" href="#home"
+          ><span class="crest" aria-hidden="true">C</span
+          ><span>CRESTWOOD<small>COLLEGE</small></span></a
+        >
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown">
+            <button type="button" aria-expanded="false" aria-controls="course-menu">
+              Courses <span class="course-chevron" aria-hidden="true"></span>
+            </button>
+            <ul id="course-menu" class="dropdown-menu" hidden>
+              <li><a href="#computer-science">Computer Science</a></li>
+              <li><a href="#business-administration">Business Administration</a></li>
+              <li><a href="#mass-communication">Mass Communication</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-admission" href="#admission"
+              >Admission <span aria-hidden="true">↗</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero: change the background photo in style.css -->
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <p class="eyebrow">KNOWLEDGE. CHARACTER. POSSIBILITY.</p>
+          <h1>A bright future<br />begins <em>with you.</em></h1>
+          <p>
+            Welcome to Crestwood College. Discover your potential, build your confidence,
+            and take the next step towards a future that matters.
+          </p>
+          <a class="button gold" href="#admission"
+            >Check Admission <span aria-hidden="true">↗</span></a
+          >
+          <div class="hero-note"><span></span> Your next chapter starts here</div>
+        </div>
+        <div class="hero-bottom container">
+          <span>A place to learn. A place to belong.</span
+          ><a href="#about">EXPLORE CRESTWOOD ↓</a>
+        </div>
+      </section>
+      <!-- About the school -->
+      <section class="about section container" id="about">
+        <div>
+          <p class="eyebrow green">WELCOME TO CRESTWOOD</p>
+          <h2>Big ambitions.<br />A strong foundation.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Crestwood College is a welcoming learning community in Owerri, Nigeria. We
+            bring practical learning, creative thinking, and personal development together
+            to prepare students for life beyond the classroom.
+          </p>
+          <p>
+            With supportive tutors and career-focused courses, we help curious minds turn
+            their interests into meaningful opportunities.
+          </p>
+          <a class="text-link" href="#courses"
+            >Find your direction <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <!-- Courses: edit each card title, description and image here -->
+      <section class="courses section" id="courses">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow green">LEARN WITH PURPOSE</p>
+              <h2>Find your course.</h2>
+            </div>
+            <p>Three paths. Endless possibilities.<br />Start with what inspires you.</p>
+          </div>
+          <div class="course-grid">
+            <article class="course-card" id="computer-science">
+              <div class="course-image">
+                <img
+                  src="images/computer-science.jpg"
+                  alt="Laptop used for computer science and programming"
+                  width="900"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <span class="course-number">01 / TECHNOLOGY</span>
+                <h3>Computer Science</h3>
+                <p>
+                  Learn programming, explore digital systems, and develop the practical
+                  skills to solve real-world problems with technology.
+                </p>
+                <a href="#admission"
+                  >Check eligibility <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="course-card" id="business-administration">
+              <div class="course-image">
+                <img
+                  src="images/business.jpg"
+                  alt="Colleagues collaborating around a table"
+                  width="900"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <span class="course-number">02 / BUSINESS</span>
+                <h3>Business Administration</h3>
+                <p>
+                  Build a foundation in management, marketing, and entrepreneurship to
+                  lead teams and bring ambitious ideas to life.
+                </p>
+                <a href="#admission"
+                  >Check eligibility <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="course-card" id="mass-communication">
+              <div class="course-image">
+                <img
+                  src="images/communication.jpg"
+                  alt="Microphone in a media recording studio"
+                  width="900"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <span class="course-number">03 / MEDIA</span>
+                <h3>Mass Communication</h3>
+                <p>
+                  Find your voice through storytelling, journalism, and digital media.
+                  Create messages that inform, connect, and inspire.
+                </p>
+                <a href="#admission"
+                  >Check eligibility <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Admission eligibility checker -->
+      <section class="section container admission" id="admission">
+        <div class="admission-copy">
+          <p class="eyebrow green">TAKE THE NEXT STEP</p>
+          <h2>Your journey<br />starts here.</h2>
+          <p>
+            Ready to join us? Enter your details to find out whether you meet our
+            admission requirements.
+          </p>
+          <ul class="requirements">
+            <li>At least 16 years old</li>
+            <li>English score of 50 or above</li>
+            <li>Mathematics score of 50 or above</li>
+          </ul>
+          <p class="fine-print">
+            Scores must be between 0 and 100. This checker confirms eligibility only; it
+            does not submit an application.
+          </p>
+        </div>
+        <form class="admission-form" id="admission-form" novalidate>
+          <span class="form-label">ADMISSION ELIGIBILITY</span>
+          <h3>Let’s check your details.</h3>
+          <div class="form-progress">
+            <span id="progress-label">0 of 3 details completed</span
+            ><span aria-hidden="true">YOUR NEXT CHAPTER</span>
+          </div>
+          <progress
+            id="form-progress"
+            max="3"
+            value="0"
+            aria-label="Admission details completed"
+          ></progress>
+          <div class="field">
+            <label for="course"
+              >Your preferred course <span class="optional">(optional)</span></label
+            ><select id="course" name="course">
+              <option value="">Choose a course</option>
+              <option>Computer Science</option>
+              <option>Business Administration</option>
+              <option>Mass Communication</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="age">Your age</label
+            ><input
+              id="age"
+              name="age"
+              type="number"
+              min="0"
+              step="any"
+              placeholder="e.g. 17"
+              required
+            />
+          </div>
+          <div class="score-fields">
+            <div class="field">
+              <label for="english">English score</label
+              ><input
+                id="english"
+                name="english"
+                type="number"
+                min="0"
+                max="100"
+                step="any"
+                placeholder="0–100"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="mathematics">Mathematics score</label
+              ><input
+                id="mathematics"
+                name="mathematics"
+                type="number"
+                min="0"
+                max="100"
+                step="any"
+                placeholder="0–100"
+                required
+              />
+            </div>
+          </div>
+          <button class="button submit-button" type="submit">
+            Check Eligibility <span aria-hidden="true">↗</span>
+          </button>
+          <button class="reset-button" type="reset">Clear details</button>
+          <p
+            id="result"
+            class="result"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></p>
+        </form>
+      </section>
+      <!-- Frequently asked questions: edit the answers below. -->
+      <section class="faq section" id="questions">
+        <div class="container faq-layout">
+          <div>
+            <p class="eyebrow green">A LITTLE MORE CLARITY</p>
+            <h2>Good questions.<br />Clear answers.</h2>
+            <p>Everything you need to know before checking your eligibility.</p>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>What are the admission requirements?</summary>
+              <p>
+                You must be at least 16 years old, with a minimum score of 50 in both
+                English and Mathematics. Scores must be between 0 and 100.
+              </p>
+            </details>
+            <details>
+              <summary>Does qualifying mean I have been admitted?</summary>
+              <p>
+                No. This tool checks whether you meet the basic requirements. It does not
+                submit an application or issue an admission offer.
+              </p>
+            </details>
+            <details>
+              <summary>Can I explore more than one course?</summary>
+              <p>
+                Yes. Browse any of our three courses, then click Check eligibility on a
+                course card to select it in the form. The same eligibility rules apply to
+                all three courses.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <a class="back-to-top" href="#home" aria-label="Back to top" hidden>↑</a>
+    <!-- School contact details -->
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#home"
+            ><span class="crest" aria-hidden="true">C</span
+            ><span>CRESTWOOD<small>COLLEGE</small></span></a
+          >
+          <p>Learn today. Shape tomorrow.</p>
+        </div>
+        <div>
+          <h3>Visit our campus</h3>
+          <p>24 Learning Avenue, Owerri<br />Imo State, Nigeria</p>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <p>+234 800 000 0000<br />admissions@crestwood.example</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year">2026</span> Crestwood College</span
+        ><span>Demonstration website · Fictional school and contact details</span>
+      </div>
+    </footer>
+  </body>
+</html>
